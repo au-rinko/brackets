@@ -18,8 +18,6 @@ module.exports = function check(str, bracketsConfig) {
       if(res.length > 0){
         if(res[res.length - 1] == openBrackets[closeBrackets.indexOf(str[i])]){
           res.pop();
-        }else{
-          return false;
         }
       }else{
         return false;
